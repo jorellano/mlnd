@@ -1,0 +1,104 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 47,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "import numpy\n",
+    "from pandas import DataFrame, Series\n",
+    "\n",
+    "\n",
+    "def numpy_dot():\n",
+    "    '''\n",
+    "    Imagine a point system in which each country is awarded 4 points for each\n",
+    "    gold medal,  2 points for each silver medal, and one point for each \n",
+    "    bronze medal.  \n",
+    "\n",
+    "    Using the numpy.dot function, create a new dataframe called \n",
+    "    'olympic_points_df' that includes:\n",
+    "        a) a column called 'country_name' with the country name\n",
+    "        b) a column called 'points' with the total number of points the country\n",
+    "           earned at the Sochi olympics.\n",
+    "           \n",
+    "    You do not need to call the function in your code when running it in the\n",
+    "    browser - the grader will do that automatically when you submit or test it.\n",
+    "    '''\n",
+    "\n",
+    "    countries = ['Russian Fed.', 'Norway', 'Canada', 'United States',\n",
+    "                 'Netherlands', 'Germany', 'Switzerland', 'Belarus',\n",
+    "                 'Austria', 'France', 'Poland', 'China', 'Korea', \n",
+    "                 'Sweden', 'Czech Republic', 'Slovenia', 'Japan',\n",
+    "                 'Finland', 'Great Britain', 'Ukraine', 'Slovakia',\n",
+    "                 'Italy', 'Latvia', 'Australia', 'Croatia', 'Kazakhstan']\n",
+    "\n",
+    "    gold = [13, 11, 10, 9, 8, 8, 6, 5, 4, 4, 4, 3, 3, 2, 2, 2, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0]\n",
+    "    silver = [11, 5, 10, 7, 7, 6, 3, 0, 8, 4, 1, 4, 3, 7, 4, 2, 4, 3, 1, 0, 0, 2, 2, 2, 1, 0]\n",
+    "    bronze = [9, 10, 5, 12, 9, 5, 2, 1, 5, 7, 1, 2, 2, 6, 2, 4, 3, 1, 2, 1, 0, 6, 2, 1, 0, 1]\n",
+    " \n",
+    "    olympic_medal_counts = {'country_name': Series(countries), 'gold': Series(gold),\n",
+    "                               ' silver': Series(silver), 'bronze': Series(bronze)}\n",
+    "    olympic_medal_counts_df = DataFrame(olympic_medal_counts)\n",
+    "    \n",
+    "    medal_counts = olympic_medal_counts_df[['gold', 'silver','bronze']]\n",
+    "    points = numpy.dot(medal_counts, [4, 2, 1])\n",
+    "    \n",
+    "    olympic_points = {'country_name' : Series(countries), 'points': Series(points)}\n",
+    "    \n",
+    "    olympic_points_df = DataFrame(olympic_points)\n",
+    "    \n",
+    "    print (olympic_points_df)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 44,
+   "metadata": {},
+   "outputs": [
+    {
+     "ename": "NameError",
+     "evalue": "name 'olympic_points_df' is not defined",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[1;31m\u001b[0m",
+      "\u001b[1;31mNameError\u001b[0mTraceback (most recent call last)",
+      "\u001b[1;32m<ipython-input-44-6d1526c79c6d>\u001b[0m in \u001b[0;36m<module>\u001b[1;34m()\u001b[0m\n\u001b[1;32m----> 1\u001b[1;33m \u001b[0molympic_points_df\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0m",
+      "\u001b[1;31mNameError\u001b[0m: name 'olympic_points_df' is not defined"
+     ]
+    }
+   ],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {
+    "collapsed": true
+   },
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 2",
+   "language": "python",
+   "name": "python2"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 2
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython2",
+   "version": "2.7.13"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 2
+}
