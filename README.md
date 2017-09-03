@@ -1,7 +1,7 @@
 #MLND
 ===========
 
-Udacity's Machine Learning Nanodegree project files and notes
+[Udacity's Machine Learning Nanodegree](https://www.udacity.com/course/machine-learning-engineer-nanodegree--nd009) project files and notes
 
 The Nanodegree is an online certification which involves the following
 	1. Supervised learning, unsupervised learning and Reinforcement learning, and Deep Learning
