@@ -18,16 +18,16 @@ The Nanodegree is an online certification which involves the following
 	0. Exploratory Project: Titanic Survival Exploration
 	
 	1. Model Evaluation and Validation
-	..* Project 1: Predicting Boston Housing Prices
+	+ Project 1: Predicting Boston Housing Prices
 		
 	2. upervised Learning
-	..* Project 2: Building a Student Intervention System (Predicting whether or not students will fail so schools can intervene to help them graduate)
+	+ Project 2: Building a Student Intervention System (Predicting whether or not students will fail so schools can intervene to help them graduate)
 		
 	3. Unsupervised Learning
-	..* Project 3: Creating Customer Segments (Segmenting customers based on spending in different categories)
+	+ Project 3: Creating Customer Segments (Segmenting customers based on spending in different categories)
 		
 	4. Reinforcement Learning
-	..* Project 4: Train a Smartcab to Drive (Implement Q-learning algorithm)
+	- Project 4: Train a Smartcab to Drive (Implement Q-learning algorithm)
 		
 	5. Machine Learning Specialisation of Choice
 
